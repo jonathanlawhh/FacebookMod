@@ -1408,7 +1408,9 @@
         <item name="tooltipTheme">@style/Theme.FBUi.Tooltip.Black</item>
         <item name="videoTooltipTheme">@style/Theme.Video.Tooltip.Black</item>
     </style>
-    <style name="Theme.FBUiBase" parent="@style/Theme.MinimumReqs">
+    <style name="Theme.FBUiBase" parent="@*android:style/Theme.Material.Light.NoActionBar">
+	<item name="android:statusBarColor">#ff273b65</item>
+        <item name="android:colorPrimary">@color/fbui_facebook_blue</item>
         <item name="android:textAppearance">@style/TextAppearance.FBUi</item>
         <item name="android:textColorPrimary">@color/fbui_text_dark</item>
         <item name="android:textColorSecondary">@color/fbui_text_medium</item>
@@ -1471,8 +1473,8 @@
         <item name="contentViewThumbnailXlarge">@dimen/fbui_content_view_tw4l_thumbnail_width_height</item>
         <item name="contentViewWithButtonStyle">@style/Widget.ContentViewWithButton</item>
         <item name="checkedContentViewStyle">@style/Widget.CheckedContentView</item>
-        <item name="alertDialogTheme">@style/Theme.FBUi.Dialog.Alert</item>
-        <item name="alertDialogStyle">@style/Widget.AlertDialog</item>
+        <item name="alertDialogTheme">@*android:style/Theme.Material.Dialog.Alert</item>
+        <item name="alertDialogStyle">@*android:style/AlertDialog.Material</item>
         <item name="alertDialogPaddingHorizontal">24.0dip</item>
         <item name="alertDialogPaddingVertical">18.0dip</item>
         <item name="alertDialogPaddingVerticalSmall">8.0dip</item>
@@ -1574,8 +1576,8 @@
         <item name="buttonSpecialSmallInverse">@style/Widget.Button.FBUi.Light.Special.Small</item>
         <item name="buttonSpecialMediumInverse">@style/Widget.Button.FBUi.Light.Special.Medium</item>
         <item name="buttonSpecialLargeInverse">@style/Widget.Button.FBUi.Light.Special.Large</item>
-        <item name="alertDialogTheme">@style/Theme.FBUi.Dark.Dialog.Alert</item>
-        <item name="alertDialogStyle">@style/Widget.AlertDialog</item>
+        <item name="alertDialogTheme">@*android:style/Theme.Material.Dialog.Alert</item>
+        <item name="alertDialogStyle">@*android:style/AlertDialog.Material</item>
         <item name="popoverWindowTheme">@style/Theme.FBUi.Dark.PopoverWindow</item>
         <item name="popoverWindowBackground">@drawable/fbui_popover_dark</item>
         <item name="popoverNubAbove">@drawable/fbui_popover_nub_above_dark</item>
@@ -1695,6 +1697,8 @@
     <style name="Theme.FBUi.Dialog.Alert" parent="@style/Theme.FBUi.Dialog" />
     <style name="Theme.FBUi.Dark.Dialog.Alert" parent="@style/Theme.FBUi.Dark.Dialog" />
     <style name="Theme.FBUi.LoginBase" parent="@style/Theme.FBUi">
+	<item name="android:statusBarColor">@color/fbui_facebook_blue</item>
+	<item name="android:navigationBarColor">@color/fbui_facebook_blue</item>
         <item name="loginScreenBackground">@color/fbui_facebook_blue</item>
         <item name="loginProgressMessageTextStyle">@style/LoginProgressMessageTextStyle</item>
         <item name="loginButtonStyle">@style/LoginButtonStyle</item>
